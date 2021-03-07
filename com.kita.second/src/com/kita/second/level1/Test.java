@@ -2,6 +2,18 @@ package com.kita.second.level1;
 
 public class Test {
 	public static void main(String[] args) {
+    	Calc myCalc = new Calc();
+//		double pi = myCalc.pi;
+		double pi = Calc.pi;
+//		int num = Calc.num; 이렇게는 안됨
+		int num = myCalc.num;
+		myCalc.num = 15;
+		System.out.println("myCalc.num: "+ myCalc.num);
+		
+		Calc yourCalc = new Calc();
+		System.out.println("yourCalc.num: "+  yourCalc.num );
+		
+		
 //		Korean yj = new Korean("대한민국");
 //		System.out.println(yj.nation);
 //		yj.nation = "미국"

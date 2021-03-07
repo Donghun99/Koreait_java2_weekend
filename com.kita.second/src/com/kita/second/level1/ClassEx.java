@@ -4,7 +4,21 @@ public class ClassEx {
 	//필드- 내가 만들어 내고자 하는 부품의 상태/속성을 나타냄
 	int field1;
 	String field2;
-	int[] field3;
+	int[] field3;//인스턴스
+	
+	int field4;
+	static int field5;
+	
+	void method4() {}
+	static void method5() {}
+	
+	static void methodTest() {//스테틱이 붙으면 만들어지지 않은 인스턴스에는 접근 불가
+//		this.field4 =10; 불가능
+//		this.method4();  불가능
+		
+		field5 = 10;//스테틱 붙은 것들 끼리는 가능
+		method5();
+	}
 	
 	//생성자 -필드를 초기화시키는 역할,생성자 안에 메소드 넣을 수 있다,매개변수는 있어도 되고 없어도 됨
 	public ClassEx() {

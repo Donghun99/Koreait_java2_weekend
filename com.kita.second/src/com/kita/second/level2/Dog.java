@@ -7,6 +7,8 @@ public class Dog extends Animal {
 		super(name); //Animal(name);
 //		super.age =1;
 		this.cutiness = true;
+//		super.type ="";
+//		super.method();
 		
 	}
 	
