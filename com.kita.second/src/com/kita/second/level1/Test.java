@@ -14,6 +14,7 @@ public class Test {
 		System.out.println("yourCalc.num: "+  yourCalc.num );
 		
 		
+		
 //		Korean yj = new Korean("대한민국");
 //		System.out.println(yj.nation);
 //		yj.nation = "미국"
