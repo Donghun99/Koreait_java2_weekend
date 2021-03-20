@@ -25,7 +25,11 @@ public class Checker {
 		
 		System.out.printf("S: %d, B: %d, O: %d\n", s, b, gameCnt-s-b);
 	
+//		boolean result = (s != gameCnt);
+//		return result;
+		
 		return (s != gameCnt);
+		  
 	
 	}	
 

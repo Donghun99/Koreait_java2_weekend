@@ -6,17 +6,18 @@ public class Customer {
 	public MenuItem order(Menu m) {
 		m.showMenus();
 		Scanner scan = new Scanner(System.in);
-		MenuItem mi = null;
+		MenuItem mi = null; //고객선택메뉴
 		while(mi == null) {
+			System.out.print("메뉴 번호를 입력해 주세요 : ");
+			String strNum = scan.next();
+			int menuNum;
 			try {
-				System.out.print("메뉴 번호를 입력해 주세요 : ");
-				String menuNo = scan.nextLine();
-				int intMenuNo = Integer.parseInt(menuNo);
-				mi = m.choose(intMenuNo - 1);
+				menuNum = Integer.parseInt(strNum);
+			    mi = m.choose(menuNum -1);//인덱스 값을 보내주기 위해서
 			} catch(NumberFormatException e) {
-				System.out.println("숫자를 입력해 주세요.");
+				System.out.println("숫자만 입력해 주세요.");
 			} catch(Exception e) {
-				System.out.println("메뉴를 잘못 선택하셨습니다.");
+				System.out.println("메뉴를 잘못 선택하셨습니다.");//메뉴판에 없는 숫자인 경우
 			}
 		}
 		scan.close();
@@ -28,4 +29,3 @@ public class Customer {
 	}
 	}
 
-}
