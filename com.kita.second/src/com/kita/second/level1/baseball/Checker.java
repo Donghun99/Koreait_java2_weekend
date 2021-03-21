@@ -1,7 +1,5 @@
 package com.kita.second.level1.baseball;
 
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Checker {
 	//스트라이크, 볼, 아웃 개수 확인하는 클래스
